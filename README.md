@@ -1,5 +1,5 @@
 # ArcherD50
-Utility to get statistics and traffic monitoring from TP-Link Archer D50![chronograf](D:\Documents\develop\GitHub\ArcherD50\chronograf.png)
+Utility to get statistics and traffic monitoring from TP-Link Archer D50![chronograf](chronograf.png)
 
 There are two modules:
 
