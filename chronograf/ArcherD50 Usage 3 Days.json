@@ -1,0 +1,1716 @@
+{
+	"meta": {
+		"chronografVersion": "1.8.4",
+		"sources": {
+			"1": {
+				"name": "InfluxDB",
+				"link": "/chronograf/v1/sources/1"
+			}
+		}
+	},
+	"dashboard": {
+		"id": "6",
+		"cells": [
+			{
+				"i": "ed075eed-be24-4fc0-9f43-c21465c93245",
+				"x": 0,
+				"y": 6,
+				"w": 4,
+				"h": 2,
+				"name": "5c:77:76:54:fa:8f",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.5C:77:76:54:FA:8F\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.5C:77:76:54:FA:8F",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "a515c0b2-bf83-4f03-9eeb-7d7004454a0e",
+						"type": "scale",
+						"hex": "#FDC44F",
+						"name": "Cthulhu",
+						"value": "0"
+					},
+					{
+						"id": "0b46baa5-5a8e-4e2b-be56-713e882863b2",
+						"type": "scale",
+						"hex": "#007C76",
+						"name": "Cthulhu",
+						"value": "0"
+					},
+					{
+						"id": "5b312d76-bd60-4d74-bdfd-4373b0dbb405",
+						"type": "scale",
+						"hex": "#8983FF",
+						"name": "Cthulhu",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/ed075eed-be24-4fc0-9f43-c21465c93245"
+				}
+			},
+			{
+				"i": "90844257-7ad5-435a-a3d2-ddf640c1d732",
+				"x": 8,
+				"y": 6,
+				"w": 4,
+				"h": 2,
+				"name": "iPhoneraffaella",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.iPhonedaffaella\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.iPhonedaffaella",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "df58b135-95df-41fa-ba45-6342e273cf2a",
+						"type": "scale",
+						"hex": "#FD7A5D",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "6065b37a-e0cb-4959-b811-3022188e1d7d",
+						"type": "scale",
+						"hex": "#5F1CF2",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "ec2b02b3-4462-4acb-b601-b521b1313be4",
+						"type": "scale",
+						"hex": "#4CE09A",
+						"name": "Delorean",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/90844257-7ad5-435a-a3d2-ddf640c1d732"
+				}
+			},
+			{
+				"i": "3d6f92e9-3e17-40ea-b355-ac46b6bfdb43",
+				"x": 8,
+				"y": 4,
+				"w": 4,
+				"h": 2,
+				"name": "iPhoneMirkodiaz",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.iPhoneMirkodiaz\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.iPhoneMirkodiaz",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "df58b135-95df-41fa-ba45-6342e273cf2a",
+						"type": "scale",
+						"hex": "#FD7A5D",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "6065b37a-e0cb-4959-b811-3022188e1d7d",
+						"type": "scale",
+						"hex": "#5F1CF2",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "ec2b02b3-4462-4acb-b601-b521b1313be4",
+						"type": "scale",
+						"hex": "#4CE09A",
+						"name": "Delorean",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/3d6f92e9-3e17-40ea-b355-ac46b6bfdb43"
+				}
+			},
+			{
+				"i": "58e51709-75d6-4225-bed1-c6882d88c8cb",
+				"x": 8,
+				"y": 2,
+				"w": 4,
+				"h": 2,
+				"name": "iPaddiMirkodell",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.iPaddiMirkodell\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.iPaddiMirkodell",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "df58b135-95df-41fa-ba45-6342e273cf2a",
+						"type": "scale",
+						"hex": "#FD7A5D",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "6065b37a-e0cb-4959-b811-3022188e1d7d",
+						"type": "scale",
+						"hex": "#5F1CF2",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "ec2b02b3-4462-4acb-b601-b521b1313be4",
+						"type": "scale",
+						"hex": "#4CE09A",
+						"name": "Delorean",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/58e51709-75d6-4225-bed1-c6882d88c8cb"
+				}
+			},
+			{
+				"i": "91aa8c7f-792f-4313-af7a-ffbbe52a8e56",
+				"x": 0,
+				"y": 4,
+				"w": 4,
+				"h": 2,
+				"name": "nintendo",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.nintendo\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.nintendo",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "012e3950-1106-4657-a16d-e56b1feda48b",
+						"type": "scale",
+						"hex": "#74D495",
+						"name": "Atlantis",
+						"value": "0"
+					},
+					{
+						"id": "99e40050-90f8-475f-b8a8-89314596f95a",
+						"type": "scale",
+						"hex": "#3F3FBA",
+						"name": "Atlantis",
+						"value": "0"
+					},
+					{
+						"id": "7dd4c3d1-532c-48cf-8d1b-5cb626733f40",
+						"type": "scale",
+						"hex": "#FF4D9E",
+						"name": "Atlantis",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/91aa8c7f-792f-4313-af7a-ffbbe52a8e56"
+				}
+			},
+			{
+				"i": "b0399c43-5df0-4519-a37b-6221127ccd10",
+				"x": 0,
+				"y": 2,
+				"w": 4,
+				"h": 2,
+				"name": "realme-5",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.realme-5\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.realme-5",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "012e3950-1106-4657-a16d-e56b1feda48b",
+						"type": "scale",
+						"hex": "#74D495",
+						"name": "Atlantis",
+						"value": "0"
+					},
+					{
+						"id": "99e40050-90f8-475f-b8a8-89314596f95a",
+						"type": "scale",
+						"hex": "#3F3FBA",
+						"name": "Atlantis",
+						"value": "0"
+					},
+					{
+						"id": "7dd4c3d1-532c-48cf-8d1b-5cb626733f40",
+						"type": "scale",
+						"hex": "#FF4D9E",
+						"name": "Atlantis",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/b0399c43-5df0-4519-a37b-6221127ccd10"
+				}
+			},
+			{
+				"i": "84afecc4-9aaa-4814-90e4-3e2b0045e7e2",
+				"x": 4,
+				"y": 2,
+				"w": 4,
+				"h": 2,
+				"name": "RedmiNote8T",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.RedmiNote8T-Redmi\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.RedmiNote8T-Redmi",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "c47f2a66-559a-4648-9f2f-f14238ba895e",
+						"type": "scale",
+						"hex": "#8F8AF4",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					},
+					{
+						"id": "6c7a8b18-d1bf-436b-ab71-2753f7413f71",
+						"type": "scale",
+						"hex": "#A51414",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					},
+					{
+						"id": "b7959b7b-7a00-472d-a416-52abf75fe0a9",
+						"type": "scale",
+						"hex": "#F4CF31",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/84afecc4-9aaa-4814-90e4-3e2b0045e7e2"
+				}
+			},
+			{
+				"i": "70994a51-d091-4e96-a82a-fec246e22f89",
+				"x": 4,
+				"y": 4,
+				"w": 4,
+				"h": 2,
+				"name": "Huawei_MediaPad_T5",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.HUAWEI_MediaPad_T5-dc2e4f\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.HUAWEI_MediaPad_T5-dc2e4f",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "c47f2a66-559a-4648-9f2f-f14238ba895e",
+						"type": "scale",
+						"hex": "#8F8AF4",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					},
+					{
+						"id": "6c7a8b18-d1bf-436b-ab71-2753f7413f71",
+						"type": "scale",
+						"hex": "#A51414",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					},
+					{
+						"id": "b7959b7b-7a00-472d-a416-52abf75fe0a9",
+						"type": "scale",
+						"hex": "#F4CF31",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/70994a51-d091-4e96-a82a-fec246e22f89"
+				}
+			},
+			{
+				"i": "0f6170da-6273-49a4-bc6a-6c513c59e5dc",
+				"x": 8,
+				"y": 0,
+				"w": 4,
+				"h": 2,
+				"name": "Heating",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.HEATING\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.HEATING",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "53a9b743-bbea-47a6-8134-5ecde8fa5d4d",
+						"type": "scale",
+						"hex": "#31C0F6",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "bba07519-fbef-4102-8ef8-bb95e42a1eef",
+						"type": "scale",
+						"hex": "#A500A5",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "feab66fb-9576-4d81-91e8-002913fdb90e",
+						"type": "scale",
+						"hex": "#FF7E27",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/0f6170da-6273-49a4-bc6a-6c513c59e5dc"
+				}
+			},
+			{
+				"i": "6d2be4ed-9e83-4f42-8188-89f2b43d3cef",
+				"x": 4,
+				"y": 0,
+				"w": 4,
+				"h": 2,
+				"name": "Nas",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.NAS\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.NAS",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "53a9b743-bbea-47a6-8134-5ecde8fa5d4d",
+						"type": "scale",
+						"hex": "#31C0F6",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "bba07519-fbef-4102-8ef8-bb95e42a1eef",
+						"type": "scale",
+						"hex": "#A500A5",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "feab66fb-9576-4d81-91e8-002913fdb90e",
+						"type": "scale",
+						"hex": "#FF7E27",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/6d2be4ed-9e83-4f42-8188-89f2b43d3cef"
+				}
+			},
+			{
+				"i": "f9e547f2-10b3-47bf-abe1-410fc7273127",
+				"x": 0,
+				"y": 0,
+				"w": 4,
+				"h": 2,
+				"name": "Frenchi",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.FRENCHI\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.FRENCHI",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "53a9b743-bbea-47a6-8134-5ecde8fa5d4d",
+						"type": "scale",
+						"hex": "#31C0F6",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "bba07519-fbef-4102-8ef8-bb95e42a1eef",
+						"type": "scale",
+						"hex": "#A500A5",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "feab66fb-9576-4d81-91e8-002913fdb90e",
+						"type": "scale",
+						"hex": "#FF7E27",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/f9e547f2-10b3-47bf-abe1-410fc7273127"
+				}
+			},
+			{
+				"i": "d0c3be4c-3f6a-429e-a094-35a04cbe7530",
+				"x": 4,
+				"y": 6,
+				"w": 4,
+				"h": 2,
+				"name": "80:7d:3a:33:52:62",
+				"queries": [
+					{
+						"query": "SELECT mean(\"Bps\") AS \"mean_Bps\" FROM \"netusage3d\".\"3d\".\"ArcherD50.80:7D:3A:33:52:62\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage3d",
+							"measurement": "ArcherD50.80:7D:3A:33:52:62",
+							"retentionPolicy": "3d",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_Bps",
+									"args": [
+										{
+											"value": "Bps",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line-stepplot",
+				"colors": [
+					{
+						"id": "a515c0b2-bf83-4f03-9eeb-7d7004454a0e",
+						"type": "scale",
+						"hex": "#FDC44F",
+						"name": "Cthulhu",
+						"value": "0"
+					},
+					{
+						"id": "0b46baa5-5a8e-4e2b-be56-713e882863b2",
+						"type": "scale",
+						"hex": "#007C76",
+						"name": "Cthulhu",
+						"value": "0"
+					},
+					{
+						"id": "5b312d76-bd60-4d74-bdfd-4373b0dbb405",
+						"type": "scale",
+						"hex": "#8983FF",
+						"name": "Cthulhu",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.MBps",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "host",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/d0c3be4c-3f6a-429e-a094-35a04cbe7530"
+				}
+			}
+		],
+		"templates": [],
+		"name": "ArcherD50 Usage 3 Days",
+		"organization": "default",
+		"links": {
+			"self": "/chronograf/v1/dashboards/6",
+			"cells": "/chronograf/v1/dashboards/6/cells",
+			"templates": "/chronograf/v1/dashboards/6/templates"
+		}
+	}
+}

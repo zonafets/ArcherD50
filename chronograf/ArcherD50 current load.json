@@ -1,0 +1,381 @@
+{
+	"meta": {
+		"chronografVersion": "1.8.4",
+		"sources": {
+			"1": {
+				"name": "InfluxDB",
+				"link": "/chronograf/v1/sources/1"
+			}
+		}
+	},
+	"dashboard": {
+		"id": "5",
+		"cells": [
+			{
+				"i": "403ca7ce-d06d-46aa-8bd5-beb90e8b29e6",
+				"x": 0,
+				"y": 0,
+				"w": 12,
+				"h": 4,
+				"name": "All devices",
+				"queries": [
+					{
+						"query": "SELECT mean(\"FRENCHI\") AS \"mean_FRENCHI\", mean(\"HUAWEI_MediaPad_T5-dc2e4f\") AS \"mean_HUAWEI_MediaPad_T5-dc2e4f\", mean(\"HUAWEI_P30-e316c45db6d5d4\") AS \"mean_HUAWEI_P30-e316c45db6d5d4\", mean(\"MIRKO_DELL\") AS \"mean_MIRKO_DELL\", mean(\"RedmiNote8T-Redmi\") AS \"mean_RedmiNote8T-Redmi\", mean(\"YOGA720RAFFY\") AS \"mean_YOGA720RAFFY\", mean(\"realme-5\") AS \"mean_realme-5\", mean(\"60:01:94:CE:9B:77\") AS \"mean_60:01:94:CE:9B:77\", mean(\"80:7D:3A:31:74:B5\") AS \"mean_80:7D:3A:31:74:B5\", mean(\"80:7D:3A:33:19:89\") AS \"mean_80:7D:3A:33:19:89\", mean(\"80:7D:3A:33:52:62\") AS \"mean_80:7D:3A:33:52:62\", mean(\"TelecomandoTVSZ\") AS \"mean_TelecomandoTVSZ\", mean(\"nintendo\") AS \"mean_nintendo\", mean(\"retropie\") AS \"mean_retropie\" FROM \"netusage1h\".\"1h\".\"ArcherD50\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "netusage1h",
+							"measurement": "ArcherD50",
+							"retentionPolicy": "1h",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_FRENCHI",
+									"args": [
+										{
+											"value": "FRENCHI",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_HUAWEI_MediaPad_T5-dc2e4f",
+									"args": [
+										{
+											"value": "HUAWEI_MediaPad_T5-dc2e4f",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_HUAWEI_P30-e316c45db6d5d4",
+									"args": [
+										{
+											"value": "HUAWEI_P30-e316c45db6d5d4",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_MIRKO_DELL",
+									"args": [
+										{
+											"value": "MIRKO_DELL",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_RedmiNote8T-Redmi",
+									"args": [
+										{
+											"value": "RedmiNote8T-Redmi",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_YOGA720RAFFY",
+									"args": [
+										{
+											"value": "YOGA720RAFFY",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_realme-5",
+									"args": [
+										{
+											"value": "realme-5",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_60:01:94:CE:9B:77",
+									"args": [
+										{
+											"value": "60:01:94:CE:9B:77",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_80:7D:3A:31:74:B5",
+									"args": [
+										{
+											"value": "80:7D:3A:31:74:B5",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_80:7D:3A:33:19:89",
+									"args": [
+										{
+											"value": "80:7D:3A:33:19:89",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_80:7D:3A:33:52:62",
+									"args": [
+										{
+											"value": "80:7D:3A:33:52:62",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_TelecomandoTVSZ",
+									"args": [
+										{
+											"value": "TelecomandoTVSZ",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_nintendo",
+									"args": [
+										{
+											"value": "nintendo",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								},
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_retropie",
+									"args": [
+										{
+											"value": "retropie",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "tx/rx",
+						"prefix": "",
+						"suffix": "",
+						"base": "2",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line",
+				"colors": [
+					{
+						"id": "549ba572-1adc-44a8-8a42-e5500d21ce16",
+						"type": "scale",
+						"hex": "#31C0F6",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "2bfe0cf3-2ef2-46cb-9eac-b31d6103c453",
+						"type": "scale",
+						"hex": "#A500A5",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "af23a9ab-0592-4845-be2b-440b811521af",
+						"type": "scale",
+						"hex": "#FF7E27",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_60:01:94:CE:9B:77",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_80:7D:3A:31:74:B5",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_80:7D:3A:33:19:89",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_80:7D:3A:33:52:62",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_FRENCHI",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_HUAWEI_MediaPad_T5-dc2e4f",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_HUAWEI_P30-e316c45db6d5d4",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_MIRKO_DELL",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_RedmiNote8T-Redmi",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_TelecomandoTVSZ",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_YOGA720RAFFY",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_nintendo",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_realme-5",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "ArcherD50.mean_retropie",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/5/cells/403ca7ce-d06d-46aa-8bd5-beb90e8b29e6"
+				}
+			}
+		],
+		"templates": [],
+		"name": "ArcherD50 current load",
+		"organization": "default",
+		"links": {
+			"self": "/chronograf/v1/dashboards/5",
+			"cells": "/chronograf/v1/dashboards/5/cells",
+			"templates": "/chronograf/v1/dashboards/5/templates"
+		}
+	}
+}
